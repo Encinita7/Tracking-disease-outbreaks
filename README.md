@@ -27,6 +27,7 @@ Está separado por:
 - **Data**: Esta carpeta contiene los datos sin procesar, es decir, headlines.txt, además de los headlines convertidos en un archivo csv. Aparte de esto, están guardados los datos creados a lo largo del proyecto, dado que mientras se iba trabajando se iban guardando los datos para poder utiizarlos posteriormente.
 - **Maps_png**: Esta carpeta contiene imagenes de mapas creados a lo largo del trabajo en formato png, en estas se encuentran los clusters que se fueron analizando.
 - **Notebooks**: Aquí se encuentran 4  Jupyter Notebooks que juntos son la totalidad del trabajo. Estos se separaron por: Análisis de datos, procesamiento de las locaciones de los titulares, distribución geográfica de los clusters y la identificación de loos brotes de enfermedades.
+- **shapefiles**: En esta carpeta se encuentran archivos necesarios para poder trabajar con la base de datos geográficos.
 - **README.md**: Archivo que contiene una descripción general del proyecto, su objetivo principal, el proceso que se llevó a cabo y los resultados del trabajo.
 - **requirements.txt**: Este archivo contiene una lista de paquetes y sus versiones correspondientes que son requeridos para que el proyecto funcione correctamente.
 
@@ -45,18 +46,22 @@ y con KMeans:
 Comparandolos, se ve que el mejor clustering lo hizo DBSCAN, dado que KMeans incorpora en cllusters a titulares que no deberían pertenecer ahí.
 
 Se vió también, que hay muchos titulares que se encuentran en Estados Unidos, por lo que es conveniente separar los datos en Estados Unidos y en el resto del mundo. Se plotean y se obtienen:
+
 ![US headlines](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/426e0dae-6316-42df-9313-707f8864a910)
 
 ![World headlines](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/bc412780-e129-4d5d-a4c9-469363d8cdb1)
 
 Luego de esto, se buscan los centros de los clusters para relacionarlos con los titulares. 
 Con esto se buscarán patrones entre los titulares con el fin de identificar los brotes en cada cluster. Viendo el mapa del resto del mundo, se ve que:
+
 ![Headlines and outbreaks](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/e4efed7d-3671-4263-a3ff-4452bca6db7c)
 
 Y en Estados Unidos:
+
 ![Brotes Estados Unidos](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/c3b7eeb0-c690-4d10-91a0-ded2c0657d99)
 
 Quedando claro que el mayor brote de enfermedad en el mundo es del virus Zika:
+
 ![Brotes de Zika en el mundo](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/eb817fbd-5064-4bff-bf44-88f6e4d02898)
 
 Se encontraron:
@@ -65,6 +70,10 @@ Se encontraron:
 - 18 titulares en América del Sur
 - 9 titulares en India.
 
-# Conclusión
+# Conclusión del problema sanitario
+- Se puede notar que el virus Zika, que es conocido por ser transmitido por un mosquito, tiene brotes donde generalmente se conoce que puede ser cuna de tal virus, lugares húmedos y sombríos, como selva, además, que coincide con lo dicho por la OMS, que este virus se encuentra en América, Asia y África.
+- Teniendo estos datos, se les puede dar aviso a las autoridades sanitarias sobre donde se encuentran los mayores brotes, y ahí poder enviar mucha más ayuda para poder terminar con los brotes.
 
-Teniendo estos datos, se les puede dar aviso a las autoridades sanitarias sobre donde se encuentran los mayores brotes, y ahí poder enviar ayuda para poder terminar con los brotes y estudiar el por qué se encuentran ahí los brotes con el fin de poder prevenir sus apariciones.
+# Conclusión sobre el programa
+
+Para este trabajo en particular fue necesario el trabajar si o si con clustering para poder con identificación de texto, ya que solo identificando las enfermedades y locaciones, podíamos quedar cortos en términos de analizar exactamente donde estaban los brotes.
