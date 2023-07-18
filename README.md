@@ -40,8 +40,14 @@ Se obtuvieron las longitudes y latitudes de cada ciudad y país, para luego hace
 
 Con esto se procede a crear los clusters para poder identificar los brotes de enfermedades. Se crearon clusters con dos modelos distintos: DBSCAN y KMeans y por ende, también se usaron dos formas distintas de medir distancias, método Euclidiano y Great Circle Clusterer. Para poder elegir cual podría ser el modelo elegido, se plotearon los clusters en un Basemap de la Tierra, dado que anteriormente nos dimos cuenta que las latitudes y longitudes lo formaban.
 Se obtuvieron los clusters de los titulares con DBSCAN:
+
+
 ![Locations of headlines](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/b35442e4-5679-47d3-8cab-011d45d7e756)
+
+
 y con KMeans:
+
+
 ![Locations of headlines KMeans](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/a7249e32-d56b-4a66-a934-66f3bc95e0c8)
 Comparandolos, se ve que el mejor clustering lo hizo DBSCAN, dado que KMeans incorpora en cllusters a titulares que no deberían pertenecer ahí.
 
@@ -49,18 +55,23 @@ Se vió también, que hay muchos titulares que se encuentran en Estados Unidos, 
 
 ![US headlines](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/426e0dae-6316-42df-9313-707f8864a910)
 
+
 ![World headlines](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/bc412780-e129-4d5d-a4c9-469363d8cdb1)
+
 
 Luego de esto, se buscan los centros de los clusters para relacionarlos con los titulares. 
 Con esto se buscarán patrones entre los titulares con el fin de identificar los brotes en cada cluster. Viendo el mapa del resto del mundo, se ve que:
+
 
 ![Headlines and outbreaks](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/e4efed7d-3671-4263-a3ff-4452bca6db7c)
 
 Y en Estados Unidos:
 
+
 ![Brotes Estados Unidos](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/c3b7eeb0-c690-4d10-91a0-ded2c0657d99)
 
 Quedando claro que el mayor brote de enfermedad en el mundo es del virus Zika:
+
 
 ![Brotes de Zika en el mundo](https://github.com/Encinita7/Tracking-disease-outbreaks/assets/126094613/eb817fbd-5064-4bff-bf44-88f6e4d02898)
 
