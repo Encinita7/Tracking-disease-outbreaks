@@ -25,8 +25,8 @@ Se utilizará el archivo llamado headlines.txt, que contiene 650 titulares de no
 Está separado por: 
 
 - **Data**: Esta carpeta contiene los datos sin procesar, es decir, headlines.txt, además de los headlines convertidos en un archivo csv. Aparte de esto, están guardados los datos creados a lo largo del proyecto, dado que mientras se iba trabajando se iban guardando los datos para poder utiizarlos posteriormente.
-- **Maps_png**: Esta carpeta contiene imagenes de mapas creados a lo largo del trabajo en formato png, en estas se encuentran los clusters que se fueron analizando.
 - **Notebooks**: Aquí se encuentran 4  Jupyter Notebooks que juntos son la totalidad del trabajo. Estos se separaron por: Análisis de datos, procesamiento de las locaciones de los titulares, distribución geográfica de los clusters y la identificación de loos brotes de enfermedades.
+- **Reports**: Aquí se encuentra un report resumido junto a una carpeta con imagenes de los mapas creados a los largo del trabajo, en formato png, donde se pueden ver los clusters que se fueron analizando.
 - **shapefiles**: En esta carpeta se encuentran archivos necesarios para poder trabajar con la base de datos geográficos.
 - **README.md**: Archivo que contiene una descripción general del proyecto, su objetivo principal, el proceso que se llevó a cabo y los resultados del trabajo.
 - **requirements.txt**: Este archivo contiene una lista de paquetes y sus versiones correspondientes que son requeridos para que el proyecto funcione correctamente.
